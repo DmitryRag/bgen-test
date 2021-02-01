@@ -7,7 +7,6 @@ function AdForm(props) {
     const [textInput, setTextInput] = useState('')
     const [numberInput, setNumberInput] = useState('')
     const [cityInput, setCityInput] = useState('')
-    /* const [buttonCondition, setButtonCondition] = useState(true) */ // активность кнопки
 
     function hadleTitleChange(e) {
         setTitleInput(e.currentTarget.value)
@@ -29,12 +28,11 @@ function AdForm(props) {
     function handleSubmit(e) {
         e.preventDefault()
 
-        props.addAdvertisements(titleInput, textInput, numberInput, cityInput /* buttonCondition */)
+        props.addAdvertisements(titleInput, textInput, numberInput, cityInput)
         setTitleInput('')
         setTextInput('')
         setNumberInput('')
         setCityInput('')
-        /* setButtonCondition(true) */ // активность кнопки
     }
 
     // отправка формы по Enter
@@ -114,8 +112,6 @@ function AdForm(props) {
                         <button
                         className="button-send"
                         type="submit"
-                        onClick={props.onEditAvatar}
-                        /* disabled={buttonCondition} */ // активность кнопки
                         >
                         Разместить объявление
                         </button>
