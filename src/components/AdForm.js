@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import NumberFormat from 'react-number-format';
+import NumberFormat from 'react-number-format'
 
 function AdForm(props) {
     const [titleInput, setTitleInput] = useState('')
@@ -24,7 +24,6 @@ function AdForm(props) {
         setCityInput(e.currentTarget.value)
     }
 
-    // отправка формы
     function handleSubmit(e) {
         e.preventDefault()
 
@@ -35,7 +34,6 @@ function AdForm(props) {
         setCityInput('')
     }
 
-    // отправка формы по Enter
     function handleKeyPress(e) {
         if(e.key === 'Enter') {
             handleSubmit(e)
@@ -43,62 +41,62 @@ function AdForm(props) {
     }
 
     return(
-        <div className="add-form">
-            <div className="window" style={{ width: 430 }}>
-                <div className="title-bar inactive">
-                    <div className="title-bar-text">Заполните объявление</div>
-                    <div className="title-bar-controls">
-                        <button aria-label="Minimize"></button>
-                        <button aria-label="Maximize"></button>
-                        <button aria-label="Close"></button>
+        <div className='add-form'>
+            <div className='window' style={{ width: 430 }}>
+                <div className='title-bar inactive'>
+                    <div className='title-bar-text'>Заполните объявление</div>
+                    <div className='title-bar-controls'>
+                        <button aria-label='Minimize'></button>
+                        <button aria-label='Maximize'></button>
+                        <button aria-label='Close'></button>
                     </div>
                 </div>
                 <form
-                className="window-body"
+                className='window-body'
                 onSubmit={handleSubmit}
                 >
-                    <div className="field-row-stacked" style={{ width: 350 }}>
-                        <label for="text20">Заголовок :</label>
+                    <div className='field-row-stacked' style={{ width: 350 }}>
+                        <label for='text20'>Заголовок :</label>
                         <textarea
-                        id="text20"
-                        rows="2"
+                        id='text20'
+                        rows='2'
                         maxLength={140}
                         value={titleInput}
                         onChange={hadleTitleChange}
                         onKeyDown={handleKeyPress}
-                        placeholder="Заполните заголовок..."
+                        placeholder='Заполните заголовок...'
                         required
                         />
                     </div>
-                    <div className="field-row-stacked" style={{ width: 350 }}>
-                        <label for="text20">Текст объявления:</label>
+                    <div className='field-row-stacked' style={{ width: 350 }}>
+                        <label for='text20'>Текст объявления:</label>
                         <textarea
-                        id="text20"
-                        rows="4"
+                        id='text20'
+                        rows='4'
                         maxLength={300}
                         value={textInput}
                         onChange={hadleTextChange}
                         onKeyDown={handleKeyPress}
-                        placeholder="Заполните объявление..."
+                        placeholder='Заполните объявление...'
                         ></textarea>
                     </div>
-                    <div className="field-row-stacked" style={{ width: 150 }}>
-                        <label for="text18">Мобильный телефон:</label>
+                    <div className='field-row-stacked' style={{ width: 150 }}>
+                        <label for='text18'>Мобильный телефон:</label>
                         <NumberFormat
-                        id="text18"
-                        type="tel"
-                        format="+7 (###) ###-##-##" 
-                        mask="_"
+                        id='text18'
+                        type='tel'
+                        format='+7 (###) ###-##-##' 
+                        mask='_'
                         value={numberInput}
                         onChange={hadleNumberChange}
                         onKeyDown={handleKeyPress}
-                        placeholder="+7 (___) __-__-__"
+                        placeholder='+7 (___) ___-__-__'
                         required
                         />
                     </div>
-                    <p className="text">Выберете город:</p>
+                    <p className='text'>Выберете город:</p>
                     <select
-                    className="select-city"
+                    className='select-city'
                     value={cityInput}
                     onChange={hadleCityChange}
                     >
@@ -109,10 +107,7 @@ function AdForm(props) {
                         <option value='Нижний Новгород'>Нижний Новгород</option>
                     </select>
                     <div>
-                        <button
-                        className="button-send"
-                        type="submit"
-                        >
+                        <button className='button-send' type='submit'>
                         Разместить объявление
                         </button>
                     </div>
@@ -122,4 +117,4 @@ function AdForm(props) {
     )
 }
 
-export default AdForm;
+export default AdForm
