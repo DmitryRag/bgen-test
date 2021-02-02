@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/bgen-test/static/css/main.a79d2979.chunk.css",
+    "main.js": "/bgen-test/static/js/main.df0b2107.chunk.js",
+    "main.js.map": "/bgen-test/static/js/main.df0b2107.chunk.js.map",
+    "runtime-main.js": "/bgen-test/static/js/runtime-main.53817b0e.js",
+    "runtime-main.js.map": "/bgen-test/static/js/runtime-main.53817b0e.js.map",
+    "static/css/2.ac5f412e.chunk.css": "/bgen-test/static/css/2.ac5f412e.chunk.css",
+    "static/js/2.1e9cdfe0.chunk.js": "/bgen-test/static/js/2.1e9cdfe0.chunk.js",
+    "static/js/2.1e9cdfe0.chunk.js.map": "/bgen-test/static/js/2.1e9cdfe0.chunk.js.map",
+    "static/js/3.635ea5cd.chunk.js": "/bgen-test/static/js/3.635ea5cd.chunk.js",
+    "static/js/3.635ea5cd.chunk.js.map": "/bgen-test/static/js/3.635ea5cd.chunk.js.map",
+    "index.html": "/bgen-test/index.html",
+    "static/css/2.ac5f412e.chunk.css.map": "/bgen-test/static/css/2.ac5f412e.chunk.css.map",
+    "static/css/main.a79d2979.chunk.css.map": "/bgen-test/static/css/main.a79d2979.chunk.css.map",
+    "static/js/2.1e9cdfe0.chunk.js.LICENSE.txt": "/bgen-test/static/js/2.1e9cdfe0.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/bgen-test/static/media/ms_sans_serif_bold.9fbe7124.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.53817b0e.js",
+    "static/css/2.ac5f412e.chunk.css",
+    "static/js/2.1e9cdfe0.chunk.js",
+    "static/css/main.a79d2979.chunk.css",
+    "static/js/main.df0b2107.chunk.js"
+  ]
+}
