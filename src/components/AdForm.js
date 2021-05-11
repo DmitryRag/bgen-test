@@ -26,7 +26,6 @@ function AdForm(props) {
 
     function handleSubmit(e) {
         e.preventDefault()
-
         props.addAdvertisements(titleInput, textInput, numberInput, cityInput)
         setTitleInput('')
         setTextInput('')
@@ -91,6 +90,7 @@ function AdForm(props) {
                         onChange={hadleNumberChange}
                         onKeyDown={handleKeyPress}
                         placeholder='+7 (___) ___-__-__'
+                        pattern='^\+\d{1} \(\d{3}\) \d{3}-\d{2}-\d{2}$'
                         required
                         />
                     </div>

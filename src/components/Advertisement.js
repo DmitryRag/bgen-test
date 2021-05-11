@@ -7,7 +7,7 @@ function Advertisement(props) {
         <div className='window' style={{ width: 380 }} 
         key={props.advertisements.id}>
             <div className='title-bar'>
-                <div className='title-bar-text'>Объявление:</div>
+                <div className='title-bar-text'>{props.advertisements.title.substr(0, 25)}...</div>
                     <div className='title-bar-controls'>
                         <button aria-label='Minimize' onClick={() => setShow(false)}></button>
                         <button aria-label='Maximize' onClick={() => setShow(true)}></button>

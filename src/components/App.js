@@ -6,7 +6,7 @@ import { useState } from 'react'
 function App() {
     const [advertisements, setAdvertisements] = useState([])
 
-    function addAdvertisements(titleInput, textInput, numberInput, cityInput, buttonCondition) {
+    function addAdvertisements(titleInput, textInput, numberInput, cityInput) {
         if(titleInput) {
             const newItem = {
                 id: Math.random().toString(36).substr(2,9),
@@ -15,7 +15,7 @@ function App() {
                 number: numberInput,
                 city: cityInput,
             }
-            setAdvertisements([...advertisements, newItem])
+            setAdvertisements([newItem, ...advertisements])
         }
     }
 
